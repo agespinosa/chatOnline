@@ -46,7 +46,7 @@ public class UserController {
         return new ResponseEntity<>(created,HttpStatus.CREATED);
     }
  
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @RequestMapping(method = RequestMethod.PUT, 
     				 value = "{id}")
     public void updateUser( @PathVariable String id,
