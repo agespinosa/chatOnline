@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Weather Info</title>
+
+<!-- JavaScript resources -->
+<script src="js/stomp.js"></script>
+<script src="js/sockjs.min.js"></script>
+<script src="js/myjs.js"></script>
+
+</head>
+<body onload="setConnected(false)">
+
+<p>
+<input type="button" id="con" value="Connect" onclick="javascript:connect()"/>
+<input type="button" id="dis" value="Disconnect" onclick="javascript:disconnect()"/></p>
+<p>Status: <span id="status"></span></p>
+<p>Envia un msj al chat: <input type="text" id="msj" name="msj" value="un msj"/>
+<input type="button" id="but" value="Send local" onclick="javascript:sendMsj()"/></p>
+
+<h1>Chat Info:</h1>
+<div id="chatInfo">
+</div>
+
+
+</body>
+</html>

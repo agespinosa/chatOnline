@@ -1,0 +1,27 @@
+spring:
+  data: 
+    mongodb:  
+      database: mychatdb # Database name.
+      # field-naming-strategy: Fully qualified name of the FieldNamingStrategy to use.
+      # grid-fs-database= # GridFS database name.
+      host: localhost # Mongo server host.
+      port: 27017 # Mongo server port.
+      username: mychatdb # Login user of the mongo server.
+      password: mychatdb
+      repositories:
+        enabled: true # Enable Mongo repositories.
+      #uri: mongodb://localhost/test # Mongo database URI. When set, host and port are ignored.
+
+server:
+  port: 8081
+  
+  
+#security:
+#  oauth2:
+#    client:
+#      client-id: chatonli
+#      client-secret: chatonlisecret
+#      access-token-uri: http://localhost:18001/oauth/token
+#      user-authorization-uri: http://localhost:18001/oauth/authorize
+#    resource:
+#      user-info-uri: http://localhost:18001/me  
